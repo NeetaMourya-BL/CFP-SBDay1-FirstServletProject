@@ -6,10 +6,10 @@
     <title>Login Page</title>
 </head>
 <body>
-<form action="LoginServlet" method="post">
-    UserName: <input type="text" name="user">
+<form action="LoginServlet" method="post" autocomplete="off">
+    UserName: <input type="text" name="user" autocomplete="new-password">
     <br>
-    Password: <input type="password" name="pwd">
+    Password: <input type="password" name="pwd" autocomplete="new-password">
     <br>
     <input type="submit" value="Login">
 </form>

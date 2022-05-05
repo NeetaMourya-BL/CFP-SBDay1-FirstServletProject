@@ -8,3 +8,14 @@ name.addEventListener('input',function(){
     }
     else textError.textContent='Name is Incorrect!';
 });
+
+let password = document.getElementById('#password');
+let textError = document.getElementsByClassName('.text-error');
+name.addEventListener('input',function(){
+    let passwordRegex = RegExp('^(?=.*[@#$%^&+=])(?=.*[0-9])(?=.*[A-Z]).{8,}$');
+    if(passwordRegexRegex.test(password)){
+        textError.textContent="";
+        return;
+    }
+    else textError.textContent='Password is Incorrect!';
+});
